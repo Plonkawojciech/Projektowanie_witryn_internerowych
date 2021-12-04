@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <p id="output"></p>
+
+
+    <script>
+    
+    let a = parseInt(prompt('Podaj silnię:'))
+    let x = 1
+
+    let output = document.getElementById('output')
+
+    for(let i=1; i<=a; i++){
+        x*=i
+    }
+
+    output.innerHTML = x
+
+
+    </script>
+
+</body>
+
+</html>

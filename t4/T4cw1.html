@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>zad1</title>
+</head>
+<body>
+    <p id="output"></p>
+
+    <script>
+        let a = parseFloat(prompt("Podaj bok a:"));
+        let b = parseFloat(prompt("Podaj bok b:"));
+
+        let obw = (a*2) + (b*2);
+        let pole = a*b;
+
+        document.getElementById("output").innerHTML = `bok a: <b>${a}cm</b> <br>bok b: <b>${b}cm</b> <br>obwód: <b>${obw}cm</b> <br>pole: <b>${pole}cm^2</b>`;
+    </script>
+</body>
+</html>

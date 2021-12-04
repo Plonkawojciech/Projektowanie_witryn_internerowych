@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <p id="output"></p>
+    <p id="output2"></p>
+    <p id="output3"></p>
+
+
+    <script>
+
+        let output = document.getElementById('output');
+        let text = '';
+
+        for(let i = 5; i <= 15; i++){
+            text += `${i}${i<15 ? ',' : ''} `;
+        }
+        output.innerHTML = text;
+
+        let x = 4;
+        let text_while = '';
+        let output2 = document.getElementById('output2');
+        while(x < 15){
+            x++
+            text_while += `${x}${x<15 ? ',' : ''} `;
+        }
+        output2.innerHTML = text_while;
+
+        let y = 4;
+        let text_do_while = '';
+        let output3 = document.getElementById('output3');
+
+        do{
+            y++;
+            text_do_while += `${y}${y<15 ? ',' : ''} `;
+        }while(y<15);
+        output3.innerHTML = text_do_while;
+
+
+
+    </script>
+
+</body>
+</html>

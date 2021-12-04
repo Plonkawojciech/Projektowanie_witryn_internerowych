@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Instukcja if, złożone warunki- T5p1</title>
+  </head>
+  <body>
+    <h3>1 sposób</h3>
+    <p id="output1"></p>
+    <h3>2 sposób</h3>
+    <p id="output2"></p>
+
+    <script>
+      let ocena = parseInt(prompt("Podaj ocenę:"));
+      let output1 = document.getElementById("output1");
+
+      if (ocena === 1) {
+        output1.innerHTML = "niedostateczny";
+      } else if (ocena === 2) {
+        output1.innerHTML = "dopuszczający";
+      } else if (ocena === 3) {
+        output1.innerHTML = "dostateczny";
+      } else if (ocena === 4) {
+        output1.innerHTML = "dobry";
+      } else if (ocena === 5) {
+        output1.innerHTML = "bardzo dobry";
+      } else if (ocena === 6) {
+        output1.innerHTML = "celujący";
+      } else {
+        output1.innerHTML = "Niepoprawny format oceny.";
+      }
+
+      switch (ocena) {
+        case 1:
+          output2.innerHTML = "niedostateczny";
+          break;
+        case 2:
+          output2.innerHTML = "dopuszczający";
+          break;
+        case 3:
+          output2.innerHTML = "dostateczny";
+          break;
+        case 4:
+          output2.innerHTML = "dobry";
+          break;
+        case 5:
+          output2.innerHTML = "bardzo dobry";
+          break;
+        case 6:
+          output2.innerHTML = "celujący";
+          break;
+        default:
+          output2.innerHTML = "Niepoprawny format oceny.";
+          break;
+      }
+    </script>
+  </body>
+</html>

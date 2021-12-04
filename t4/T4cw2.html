@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>zad2</title>
+</head>
+<body>
+    <p id="output"></p>
+    <p id="output2"></p>
+
+    <script>
+       let firstname = 'Piotr';
+       let lastname = 'Różczka';
+       let adres = 'Dębogóra';
+
+        // zwykła kontakenacja
+        document.getElementById('output').innerHTML = 'Imię: '+firstname+', Nazwisko: '+lastname+', Adres: '+adres;
+
+        // grawisy
+        document.getElementById('output2').innerHTML = `Imię: ${firstname}, Nazwisko: ${lastname}, Adres: ${adres}`;
+    </script>
+</body>
+</html>

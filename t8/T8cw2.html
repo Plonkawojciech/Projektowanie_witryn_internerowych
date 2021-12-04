@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="output1"></p>
+    <p id="output2"></p>
+    <script>
+      const PASSWORD = "pass12345";
+
+      let inputValue = prompt("Podaj hasło");
+
+      const output1 = document.querySelector("#output1");
+      const output2 = document.querySelector("#output2");
+
+      // -------------------------------------
+      //  WYRAŻENIE FUNKCYJNE
+      // -------------------------------------
+      {
+        let checkPass = function (pass, testedPass) {
+          return pass === testedPass
+            ? "Hasło prawidłowe"
+            : "Hasło nieprawidłowe";
+        };
+
+        output1.innerHTML = checkPass(PASSWORD, inputValue);
+      }
+
+      // -------------------------------------
+      //  FUNKCJE STRZAŁKOWA
+      // -------------------------------------
+      {
+        let checkPass = (pass, testedPass) => {
+          return pass === testedPass
+            ? "Hasło prawidłowe"
+            : "Hasło nieprawidłowe";
+        };
+
+        output2.innerHTML = checkPass(PASSWORD, inputValue);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="output"></p>
+
+    <script>
+      let suma = 0;
+
+      let liczby = [];
+
+      for (let i = 0; i < 5; i++) {
+        liczby[i] = parseFloat(prompt("Podaj liczbę:"));
+      }
+
+      liczby.map((liczba) => {
+        suma += liczba;
+      });
+
+      document.querySelector("#output").innerHTML = suma;
+    </script>
+  </body>
+</html>

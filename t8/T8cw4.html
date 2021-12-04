@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="output"></p>
+
+    <script>
+      let a = parseFloat(prompt("Podaj bok a:"));
+      let b = parseFloat(prompt("Podaj bok b:"));
+      let h = parseFloat(prompt("Podaj wysokość:"));
+
+      const output = document.querySelector("#output");
+
+      let poleTrapezu = (a, b, h) => {
+        return `Pole trapezu wynosi: ${((a + b) * h) / 2}`;
+      };
+
+      output.innerHTML = poleTrapezu(a, b, h);
+    </script>
+  </body>
+</html>

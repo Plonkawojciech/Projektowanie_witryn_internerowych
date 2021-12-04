@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <p id="output"></p>
+
+
+    <script>
+        
+        let a = parseInt(prompt('Podaj wysokość:'))
+
+        let text = ''
+
+        for(let j = 0; j<a; j++){
+            for(let i=a; i>j; i--){
+                text += '@'
+            }
+            text+='<br>'
+        }
+
+        document.getElementById('output').innerHTML = text
+
+    </script>
+
+</body>
+
+</html>

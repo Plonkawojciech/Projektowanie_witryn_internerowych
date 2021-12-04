@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="output"></p>
+
+    <script>
+      let ocena = prompt('Podaj ocenę:')
+
+      document.querySelector('#output').innerHTML = comment(ocena)
+
+      function comment(grade){
+          switch(grade){
+            case '1' :
+                  return 'Sporo pracy przed Tobą!'
+            case '2-' :
+                  return 'Sporo pracy przed Tobą!'
+            case '3-':
+                return 'Jeszcze trochę, a będzie ok.'
+            default:
+                return 'Okej.'
+          }
+      }
+    </script>
+  </body>
+</html>

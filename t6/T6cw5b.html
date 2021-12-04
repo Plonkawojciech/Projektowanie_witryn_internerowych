@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <table id="output" style="border: 1px solid black; border-collapse: collapse;">
+
+    </table>
+
+
+    <script>
+
+        let range = []
+        range[0] = parseInt(prompt('Podaj liczbę wierszy'))
+        range[1] = parseInt(prompt('Podaj liczbę kolumn'))
+        
+        let text = ''
+        let output = document.getElementById('output')
+        
+
+        for(let i=1; i<range[0]+1; i++){
+            text += `<tr style="border: 1px solid black; border-colapse: colapse;"> <td style="border: 1px solid black; border-colapse: colapse; padding: 10px;">${i}</td>`
+                
+            for(let j=1; j<range[1]+1; j++){
+                
+               text += `<td style="border: 1px solid black; border-colapse: colapse; padding: 10px;">${i*j}</td>`
+                
+            }
+
+            text+='</tr>'
+        }
+        output.innerHTML = text
+        
+        document.getElementById('output').innerHTML = text
+    
+
+    </script>
+
+</body>
+
+</html>

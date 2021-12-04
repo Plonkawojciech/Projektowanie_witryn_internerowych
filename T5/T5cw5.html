@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Instukcja if, złożone warunki- T5p1</title>
+  </head>
+  <body>
+    <p id="output"></p>
+
+    <script>
+      let a = parseFloat(prompt("Podaj pierwszą liczbę:"));
+      let b = parseFloat(prompt("Podaj drugą liczbę:"));
+      let c = parseFloat(prompt("Podaj trzecią liczbę:"));
+      let output = document.getElementById("output");
+
+      if (a > b && a > c) {
+        if (b > c) {
+          output.innerHTML = `${c}, ${b}, ${a}`;
+        } else {
+          output.innerHTML = `${b}, ${c}, ${a}`;
+        }
+      }
+      if (b > a && b > c) {
+        if (a > c) {
+          output.innerHTML = `${c}, ${a}, ${b}`;
+        } else {
+          output.innerHTML = `${a}, ${c}, ${b}`;
+        }
+      }
+      if (c > a && c > b) {
+        if (a > b) {
+          output.innerHTML = `${b}, ${a}, ${c}`;
+        } else {
+          output.innerHTML = `${a}, ${b}, ${c}`;
+        }
+      }
+    </script>
+  </body>
+</html>

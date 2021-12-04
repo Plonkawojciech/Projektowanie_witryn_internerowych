@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>zad2</title>
+</head>
+<body>
+    <p id="output"></p>
+    
+
+    <script>
+        let a = parseFloat(prompt("Podaj pierwszą liczbę:"));
+        let b = parseFloat(prompt("Podaj drugą liczbę:"));
+
+        let resault = a/b;
+        
+        document.getElementById('output').innerHTML = (b != 0) ? `Wynik dzielenia: ${resault}` : 'Nie można dzielić przez zero';
+
+    </script>
+</body>
+</html>

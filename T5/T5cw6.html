@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Instukcja if, złożone warunki- T5p1</title>
+  </head>
+  <body>
+    <p id="output"></p>
+    <p id="output2"></p>
+
+    <script>
+      let output = document.getElementById("output");
+      let output2 = document.getElementById("output2");
+
+      let a = parseFloat(prompt("Podaj liczbę 1:"));
+      let znak = prompt('Podaj znak działania("+","-","*","/")');
+      let b = parseFloat(prompt("Podaj liczbę 2:"));
+
+      if (znak === "+") {
+        output.innerHTML = `${a}${znak}${b}=${a + b}`;
+      } else if (znak === "-") {
+        output.innerHTML = `${a}${znak}${b}=${a - b}`;
+      } else if (znak === "*") {
+        output.innerHTML = `${a}${znak}${b}=${a * b}`;
+      } else if (znak === "/") {
+        output.innerHTML = `${a}${znak}${b}=${a / b}`;
+      } else {
+        output.innerHTML = "Podano nieprawidłowy znak!";
+      }
+
+      switch (znak) {
+        case "+":
+          output2.innerHTML = `${a}${znak}${b}=${a + b}`;
+          break;
+
+        case "-":
+          output2.innerHTML = `${a}${znak}${b}=${a - b}`;
+          break;
+
+        case "*":
+          output2.innerHTML = `${a}${znak}${b}=${a * b}`;
+          break;
+
+        case "/":
+          output2.innerHTML = `${a}${znak}${b}=${a / b}`;
+          break;
+      }
+    </script>
+  </body>
+</html>

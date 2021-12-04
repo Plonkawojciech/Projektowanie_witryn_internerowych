@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <p id="output"></p>
+
+
+    <script>
+
+
+        let output = document.getElementById('output');
+        let text = '';
+
+        for (let i = 5; i <= 15; i+=2) {
+            text += `${i}${i < 15 ? ',' : ''} `;
+        }
+
+        output.innerHTML = text;
+
+
+    </script>
+
+</body>
+
+</html>

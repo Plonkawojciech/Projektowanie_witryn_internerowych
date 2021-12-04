@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="output"></p>
+
+    <script>
+      let a = parseFloat(prompt("Podaj liczbę a:"));
+      let b = parseFloat(prompt("Podaj liczbę b:"));
+
+      let dzialania = calculete(a, b);
+
+      document.querySelector(
+        "#output"
+      ).innerHTML = `${dzialania.dodawanie}<br>${dzialania.odejmowanie}<br>${dzialania.mnozenie}<br>${dzialania.dzielenie}`;
+
+      function calculete(x, y) {
+        let dodawanie = `${x} + ${y} = ${x + y}`;
+        let odejmowanie = `${x} - ${y} = ${x - y}`;
+        let mnozenie = `${x} * ${y} = ${x * y}`;
+        let dzielenie =
+          y === 0 ? "Nie można dzielić przez 0" : `${x} / ${y} = ${x / y}`;
+
+        return {
+          dodawanie,
+          odejmowanie,
+          mnozenie,
+          dzielenie,
+        };
+      }
+    </script>
+  </body>
+</html>

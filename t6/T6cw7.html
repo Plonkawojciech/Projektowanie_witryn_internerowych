@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <p id="output"></p>
+
+
+    <script>
+        
+        let suma = 0
+        let licznik = 1
+        let f = parseInt(prompt('Podaj liczbę'))
+
+        for(let i = 0; i<f; i++){
+            suma = suma + licznik
+            licznik++
+        }
+        
+        document.getElementById('output').innerHTML = suma
+
+    </script>
+
+</body>
+
+</html>

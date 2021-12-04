@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="output"></p>
+
+    <script>
+      let a = parseFloat(prompt("Podaj liczbę a:"));
+      let b = parseFloat(prompt("Podaj liczbę b:"));
+
+      document.querySelector("#output").innerHTML = `${min(a, b)}<br>${max(a,b)}<br>${avg(a, b)}`;
+
+      function min(x, y) {
+        return x < y ? `Minumum: ${x}` : `Minumum: ${y}`;
+      }
+      function max(x, y) {
+        return x > y ? `Maximum: ${x}` : `Maximum: ${y}`;
+      }
+      function avg(x, y) {
+        return `Average: ${(x + y) / 2}`;
+      }
+    </script>
+  </body>
+</html>

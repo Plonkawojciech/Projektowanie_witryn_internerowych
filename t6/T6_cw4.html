@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <p id="output"></p>
+
+
+    <script>
+
+        let range = parseFloat(prompt('Podaj n:'));
+        let output = document.getElementById('output');
+        let i = 3;
+
+        while(i < range){
+            if(i%3 === 0){
+                output.innerHTML += `${i} `
+            }
+            i++
+        }
+    
+
+    </script>
+
+</body>
+
+</html>

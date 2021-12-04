@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="output"></p>
+
+    <script>
+      let inputPasword = prompt("Podaj hasło");
+
+      document.querySelector("#output").innerHTML = isPassCorrect(inputPasword);
+
+      function isPassCorrect(input) {
+        // ustawione hasło
+        let pass = "pass12345";
+
+        return pass === input ? "Hasło prawidłowe" : "Błędne hasło!";
+      }
+    </script>
+  </body>
+</html>
